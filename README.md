@@ -43,4 +43,9 @@ docker-compose down [-rmi all [-v]]
 
 `docker exec -it postgres psql -U postgres` to run psql
 
-`migrate create -ext sql -dir db/migration -seq init_schema` -->
+`migrate create -ext sql -dir db/migration -seq init_schema`
+
+once the image is running
+`docker exec -it <container> <command>` <command> = bash
+open bash in that container environment
+-->

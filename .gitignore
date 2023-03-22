@@ -1,2 +1,7 @@
 .env
-vendor
+go.sum
+
+/docs
+/vendor
+/build
+/client

@@ -11,11 +11,11 @@ type ServerConfig struct {
 }
 
 type DatabaseConfig struct {
-	host     string
-	port     string
-	name     string
-	user     string
-	password string
+	Host     string
+	Port     string
+	Name     string
+	User     string
+	Password string
 }
 
 func init() {
@@ -36,11 +36,11 @@ func GetServerConfig() ServerConfig {
 
 func GetDatabaseConfig() DatabaseConfig {
 	config := DatabaseConfig{
-		host:     os.Getenv("DB_HOST"),
-		port:     os.Getenv("DB_PORT"),
-		name:     os.Getenv("DB_NAME"),
-		user:     os.Getenv("DB_USER"),
-		password: os.Getenv("DB_PASSWORD"),
+		Host:     os.Getenv("DB_HOST"),
+		Port:     os.Getenv("DB_PORT"),
+		Name:     os.Getenv("DB_NAME"),
+		User:     os.Getenv("DB_USER"),
+		Password: os.Getenv("DB_PASSWORD"),
 	}
 
 	return config
